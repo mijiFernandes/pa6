@@ -28,11 +28,112 @@ function InfoCon(a, b){
 	<link rel="apple-touch-icon" href="https://m1.nateimg.co.kr/n3main/newBI/apple-touch-icon.png">
 	<link rel="apple-touch-icon-precomposed" href="https://m1.nateimg.co.kr/n3main/newBI/apple-touch-icon.png">
 	<link rel="shortcut icon" href="https://m1.nateimg.co.kr/n3main/newBI/favicon.ico" />
+	<style>
+	@charset "utf-8";
 
-	<link rel="stylesheet" href="https://m.nate.com/css3/common.css?v=2022031001">
+body {line-height:1.2em; -webkit-text-size-adjust:none; background-color:#e6e7e9; }
+html { margin:0; }
+html.android { font-size:16px; }
+html.rest { font-size:16px; font-family:'맑은 고딕',"Malgun Gothic","돋움",Dotum,"굴림",Gulim,Helvetica,sans-serif; }
+html.safari { font-size:16px; font-family:"Helvetica Neue", "Apple SD Gothic Neo"; font-weight:300; }
+html.safari.ip6, html.safari.ip6p  { font-size:17px; }
+html.safari body { font-weight:300; }
+/*.mainContainer.f1 { font-size:16px; }  .mainContainer.f2  { font-size:18px; }  .mainContainer.f3  { font-size:20px; }
+.ip6 .mainContainer.f1, .ip6p .mainContainer.f1 { font-size:17px; } .ip6 .mainContainer.f2, .ip6p .mainContainer.f2 { font-size:19px; } .ip6 .mainContainer.f3, .ip6p .mainContainer.f3 { font-size:21px; }*/
+.mainContainer.f1 { font-size:15px; }  .mainContainer.f2  { font-size:16px; }  .mainContainer.f3  { font-size:18px; }
+.ip6 .mainContainer.f1, .ip6p .mainContainer.f1 { font-size:16px; } .ip6 .mainContainer.f2, .ip6p .mainContainer.f2 { font-size:17px; } .ip6 .mainContainer.f3, .ip6p .mainContainer.f3 { font-size:19px; }
 
-<!--	<script type="text/javascript" src="https://m.nate.com/js4/low/MM_main-min.js?v=2022031001&amp;appver=5.0.4&noticontent=Y&andverck=N&type=web&amp;os=etc&amp;ref=&amp;skai=&amp;ndruk="></script>-->
-<!--	<script type="text/javascript" src="https://m.nate.com/js4/today/today.js?v=2022031001"></script>-->
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,button,p,blockquote,th,td { margin:0; padding:0; }
+body,input,textarea,select,button,table,h1,h2,h3,h4,h5,h6 { font-weight:normal; }
+img,fieldset{border:0}
+ul,ol,li{list-style:none;}
+a { color:#222;}
+em,i,address {font-style:normal; font-weight:normal;}
+legend,caption {clear:both;display:none;}
+input,textarea,select,button,table{ font-size:inherit;font-family:inherit;line-height:inherit; }
+table{border-collapse:collapse}
+textarea { resize:none; }
+button,label { cursor:pointer; }
+a, a:hover, a:active { text-decoration: none; }
+.safari strong { font-weight:500; }
+
+.rollItem { will-change: transform; will-change: left; }
+.skipNav, .hide { position:absolute;width:1px;height:1px;overflow:hidden; }
+.cancelHighlight a {-webkit-tap-highlight-color:rgba(0,0,0,0);}
+
+.btnSet { position:relative; margin-top:17px; width:100%; height:35px; line-height:35px; z-index:2; overflow:hidden; border-top:1px solid #d0d1d2; }
+.btnSet .more { position:relative; display:block; padding:0 20px 0 10px; font-size:0.867em; text-align:right; letter-spacing:-1px; color:#999; }
+.btnSet .more:before { position:absolute; content:''; top:12px; right:10px; width:6px; height:10px; background:url('https://m1.nateimg.co.kr/n3main/sets2/set_ic2.png?v=2021081900') 0 0 no-repeat; background-size:64px auto; }
+
+.btnBox { position:relative; height:44px; margin:0 15px; line-height:44px; text-align:center; overflow:hidden; border-top:1px solid #ededed; }
+.btnBox .more { display:block; margin:0 -15px; padding:0 15px; font-weight:500; vertical-align:middle; color:#666; }
+.btnBox .more span { position:relative; display:inline-block; }
+.btnBox .more span:before { content:''; position:absolute; top:15px; right:-13px; width:7px; height:13px; background:url('https://m1.nateimg.co.kr/n3main/sets2/set_ic2.png?v=2021081900') -57px -37px no-repeat; background-size:64px auto; }
+.safari .btnBox .more span:before{ top:16px;}
+
+.conWrap { }
+.section { margin:8px 0; background-color:#fff; overflow:hidden; }
+
+.tabNav { margin:9px 4px; border:1px solid #d0d1d2; overflow:hidden; }
+.tabNav li { float:left; width:33.3%; text-align:center; border-right:1px solid #d0d1d2; box-sizing:border-box; -webkit-box-sizing:border-box;}
+.tabNav li:last-child { border:0; width:33.4%; }
+.tabNav li a { display:block; height:36px; line-height:36px; font-size:0.867em; font-weight:500; color:#777; background-color:#ebebed; }
+.tabNav li.on a { background-color:#fff; color:#ef1616; }
+
+.tabNav.cl2 li { width:50%; }
+
+.my { position:absolute; top:0; left:0; }
+.my .mybtn { position:relative; display:block; width:53px; height:55px; padding:22px 15px 15px 15px; color:transparent; overflow:hidden; box-sizing:border-box; }
+.my .mybtn:before { content:''; position:absolute; top:22px; left:15px; display:block; width:22px; height:18px; background:url('https://m1.nateimg.co.kr/n3main/sets2/set_ic2.png?v=2021081900') -20px -37px no-repeat; background-size:64px auto; }
+.todayLink { position:absolute; top:6px; right:15px; }
+.today_tit { position:relative; display:block; padding:14px 0 0 0; font-size:0; color:transparent; overflow:hidden; }
+.today_tit .logoimg { float:left; width:32px; height:16px; margin:2px 2px 0 0; }
+.today_tit .logoimg .circle,
+.today-loader .logoimg .circle {
+    position: absolute; width: 16px; height: 16px; border-radius: 50%;
+}
+.today_tit .logoimg .circle.step1,
+.today-loader .logoimg .circle.step1 {
+    left: 0; background: #5acfd1; animation: left-to-right 1.7s linear infinite;
+}
+.today_tit .logoimg .circle.step2,
+.today-loader .logoimg .circle.step2 {
+    left: 5px; background: #5b6cff; animation: right-to-left 1.7s linear infinite;
+}
+.today-loader{position:relative;display:block;padding: 200px 0;font-size:0;text-align: center;color:transparent;overflow:hidden;}
+.today-loader .logoimg {position: relative;margin: 0 auto;width:32px;height:16px;}
+
+
+@keyframes left-to-right {
+    0% { left: 0; z-index: 1; }
+    25% { left: 8px; z-index: 1; }
+    50% { left: 16px; z-index: 1;}
+    75% { left: 8px; z-index: 2; }
+    100% { left: 0; z-index: 2; }
+}
+@keyframes right-to-left {
+    0% { left: 16px; z-index: 2; }
+    25% { left: 8px; z-index: 2; }
+    50% { left: 0; z-index: 2;}
+    75% { left: 8px; z-index: 1; }
+    100% { left: 16px; z-index: 1; }
+}
+
+		/* header */
+.header { position:relative; height:116px; background-color:#fff; }
+.header h1 { width:auto; margin:0 70px; height:57px; text-align:center; z-index:1; }
+.header h1 a { display:block; padding:16px 0 17px 0; }
+.header h1 a img { display:block; margin:0 auto; }
+.header .srchBox { position:relative; height:48px; padding:1px; margin:0 15px; border:solid 1px #ff2c2e; border-radius:2px 12px 2px 2px; -webkit-border-radius:2px 12px 2px 2px; box-sizing: border-box; background-color:#fff; } /*border:1px solid rgba(255, 44, 46, 1);*/
+/*.header .srchBox { position:relative; height:46px; padding:1px; margin:0 15px; background-color:rgba(255, 44, 46, 1); border-radius:2px 12px 2px 2px; -webkit-border-radius:2px 12px 2px 2px; box-sizing: border-box;}*/
+.header .srchBox .field-wrap { height:44px; padding:0 85px 0 12px; overflow:hidden; background-color:#fff; border-radius:1px 11px 1px 1px; -webkit-border-radius:1px 11px 1px 1px; box-shadow: none; }
+.header .srchBox .type-text { border:0; width:100%; margin:11px 0 0 0; background:#fff; font-size:18px; line-height:21px; }
+.header .srchBox .type-btn { position:absolute; top:0; right:0; width:45px; height:42px; border:0; white-space:nowrap; text-indent:-1000em; overflow:visible; cursor: pointer; background:url('https://m1.nateimg.co.kr/n3main/sets2/set_ic2.png?v=2021081900') -36px -63px no-repeat; background-size:64px auto; }
+.header .srchBox .mic-btn { position:absolute; top:0; right:0; width:45px; height:42px; border:0; white-space:nowrap; text-indent:-1000em; overflow:visible; background:url('https://m1.nateimg.co.kr/n3main/sets2/set_ic2.png?v=2021081900') -38px -634px no-repeat; background-size:64px auto; }
+.header .srchBox .acTxtClr a { position:absolute; top:11px; right:40px; width:17px; height:17px; padding:5px; text-indent:-9999px; overflow:hidden; background:url('https://m1.nateimg.co.kr/n3main/sets2/set_ic2.png?v=2021081900') -35px -561px no-repeat; background-size:64px auto; }
+.header .srchClose { display:none; }
+	</style>
+
 </head><!-- safari(iphone) ,android , rest -->
 <body>
 	<div>
@@ -561,17 +662,17 @@ function InfoCon(a, b){
 	inputSearch.setAttribute("autocapitalize","off");
 	inputSearch.setAttribute("autocorrect","off");
 	</script>
-	<img src="https://stat.nate.com/stat/mstat.tiff?cp_url=[m_ndr.nate.com/mnewsedit/sisa/??ndrparam1=mw01&amp;ndrparam2=&amp;ndrparam3=&amp;ndrparam4=&amp;ndrbr=&amp;ndrparam6=&amp;ndrparam9=&amp;ndru3=&amp;ndrl3=]&amp;t=0316170315250" width="0" height="0" style="width:0;height:0;display:none;" alt="">
-	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/CustomEase.min.js"></script>
-	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/Draggable.min.js"></script>
-	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/DrawSVGPlugin.min.js"></script>
-	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/MotionPathPlugin.min.js"></script>
-	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/ScrollToPlugin.min.js"></script>
-	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/d3.v5.min.js"></script>
-	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/moment-with-locale.min.js"></script>
-	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/moment-timezone-with-data.min.js"></script>
-	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/utils.js"></script>
-	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/today-main.js?v=1647420135812"></script>
-	<div class=" dim" style="position: fixed; background-color: rgba(0, 0, 0, 0.5); z-index: 999; width: 100%; left: 0px; top: 0px; display: none;"></div>
+<!--	<img src="https://stat.nate.com/stat/mstat.tiff?cp_url=[m_ndr.nate.com/mnewsedit/sisa/??ndrparam1=mw01&amp;ndrparam2=&amp;ndrparam3=&amp;ndrparam4=&amp;ndrbr=&amp;ndrparam6=&amp;ndrparam9=&amp;ndru3=&amp;ndrl3=]&amp;t=0316170315250" width="0" height="0" style="width:0;height:0;display:none;" alt="">-->
+<!--	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/CustomEase.min.js"></script>-->
+<!--	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/Draggable.min.js"></script>-->
+<!--	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/DrawSVGPlugin.min.js"></script>-->
+<!--	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/MotionPathPlugin.min.js"></script>-->
+<!--	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/ScrollToPlugin.min.js"></script>-->
+<!--	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/d3.v5.min.js"></script>-->
+<!--	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/moment-with-locale.min.js"></script>-->
+<!--	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/moment-timezone-with-data.min.js"></script>-->
+<!--	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/utils.js"></script>-->
+<!--	<script async="" type="text/javascript" src="https://www.nate.com/js4/today/today-main.js?v=1647420135812"></script>-->
+<!--	<div class=" dim" style="position: fixed; background-color: rgba(0, 0, 0, 0.5); z-index: 999; width: 100%; left: 0px; top: 0px; display: none;"></div>-->
 </body>
 </html>
