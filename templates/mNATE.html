@@ -31,8 +31,31 @@ function InfoCon(a, b){
 	<style>
 	@charset "utf-8";
 
+body {line-height:1.2em; -webkit-text-size-adjust:none; background-color:#e6e7e9; }
+html { margin:0; }
+html.android { font-size:16px; }
+html.rest { font-size:16px; font-family:'맑은 고딕',"Malgun Gothic","돋움",Dotum,"굴림",Gulim,Helvetica,sans-serif; }
+html.safari { font-size:16px; font-family:"Helvetica Neue", "Apple SD Gothic Neo"; font-weight:300; }
+html.safari.ip6, html.safari.ip6p  { font-size:17px; }
+html.safari body { font-weight:300; }
+/*.mainContainer.f1 { font-size:16px; }  .mainContainer.f2  { font-size:18px; }  .mainContainer.f3  { font-size:20px; }
+.ip6 .mainContainer.f1, .ip6p .mainContainer.f1 { font-size:17px; } .ip6 .mainContainer.f2, .ip6p .mainContainer.f2 { font-size:19px; } .ip6 .mainContainer.f3, .ip6p .mainContainer.f3 { font-size:21px; }*/
+.mainContainer.f1 { font-size:15px; }  .mainContainer.f2  { font-size:16px; }  .mainContainer.f3  { font-size:18px; }
+.ip6 .mainContainer.f1, .ip6p .mainContainer.f1 { font-size:16px; } .ip6 .mainContainer.f2, .ip6p .mainContainer.f2 { font-size:17px; } .ip6 .mainContainer.f3, .ip6p .mainContainer.f3 { font-size:19px; }
 
-
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,button,p,blockquote,th,td { margin:0; padding:0; }
+body,input,textarea,select,button,table,h1,h2,h3,h4,h5,h6 { font-weight:normal; }
+img,fieldset{border:0}
+ul,ol,li{list-style:none;}
+a { color:#222;}
+em,i,address {font-style:normal; font-weight:normal;}
+legend,caption {clear:both;display:none;}
+input,textarea,select,button,table{ font-size:inherit;font-family:inherit;line-height:inherit; }
+table{border-collapse:collapse}
+textarea { resize:none; }
+button,label { cursor:pointer; }
+a, a:hover, a:active { text-decoration: none; }
+.safari strong { font-weight:500; }
 
 .rollItem { will-change: transform; will-change: left; }
 .skipNav, .hide { position:absolute;width:1px;height:1px;overflow:hidden; }
@@ -96,25 +119,6 @@ function InfoCon(a, b){
     100% { left: 16px; z-index: 1; }
 }
 
-/* navigation */
-.ghostNavi { background-color:#fff; }
-.nav { position:relative; z-index:2; background-color:#fff; height:45px; overflow: hidden; }
-.nav .navTab { position:relative; display: flex !important; height:45px; width:100%; padding:0 8px; text-align: center; display: -webkit-flex  !important; display: -webkit-inline-box !important;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    vertical-align: top;  }/**/
-/*.nav .navTab:after { display:block; content:''; clear:both; }*/
-.nav .navTab li { position:relative; } /* position:relative; height:43px; line-height:43px; */
-.nav .navTab li a { position:relative; display:inline-block; height:45px; padding:0 10px; font-size:1.133em; font-weight:700; line-height:40px; color:#000; letter-spacing:-1px; vertical-align: top; }
-.nav .navTab li a.on { color:#ef1616; }
-.nav .navTab li a .bNav { position:absolute; top:34px; left:0; width:100%; height:4px; margin:0 auto; font-size:0; line-height:4px; }
-.nav .navTab li a .bNav .num { display:inline-block; width:4px; height:4px; margin:0 1px; background-color:#d4d4d4; color:transparent; vertical-align:middle; text-indent:-1000em; -webkit-border-radius:4px; border-radius:4px; overflow:hidden; }
-.nav .navTab li a .bNav .num.select { background-color:#ef1616; }
-.nav .navTab li a .new { position:absolute; top:4px; right:-2px; width:11px; height:11px; color:transparent; background:url('https://m1.nateimg.co.kr/n3main/sets2/set_ic2.png?v=2021081900') 0 -327px no-repeat; background-size:64px auto; }
-.nav .navTab li a .up { position:absolute; top:6px; left:50%; margin-left:-23px; width:11px; height:11px; color:transparent; background:url('https://m1.nateimg.co.kr/n3main/sets2/set_ic2.png?v=2021081900') -11px -327px no-repeat; background-size:64px auto; }
 
 		/* header */
 .header { position:relative; height:116px; background-color:#fff; }
