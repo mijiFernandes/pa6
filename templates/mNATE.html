@@ -41,8 +41,11 @@ function InfoCon(a, b){
 		</div>
 		<header role="banner">
 			<div id="header" class="header " >
-				<h1><a href="https://m.nate.com" onclick="MM_GLOBAL.resetTab(); return MM_GLOBAL.ndrclick('MBI00');"><img src="https://m1.nateimg.co.kr/n3main/newBI/nate_170x50.png" width="85" height="25" alt="NATE" /></a></h1>
-
+				<h1>
+					<a href="/" onclick="MM_GLOBAL.resetTab(); return MM_GLOBAL.ndrclick('MBI00');">
+						<img src="https://m1.nateimg.co.kr/n3main/newBI/nate_170x50.png" width="85" height="25" alt="NATE" />
+					</a>
+				</h1>
 				<div class="hdaside">
 					<div class="my"> <!--<span>my영역 열기</span> -->
 						<a href="javascript:;" class="mybtn" data-btn="main_my" onclick="return MM_GLOBAL.ndrclick('MMY00');">my영역 열기</a>
@@ -74,18 +77,16 @@ function InfoCon(a, b){
 
 
 				<div id="search_field" class="srchBox ">
-					<form action="https://m.search.daum.net/nate" role="search" id="search" name="search" method="get" onSubmit="return MM_GLOBAL.searchSubmit();">
 						<input type="hidden" name="q" id="q" value="" />
 						<input type="hidden" name="w" id="w" value="tot" />
 						<input type="hidden" name="thr" id="thr" value="mnms" />
 						<fieldset>
-						<legend>통합검색</legend>
+							<legend>통합검색</legend>
 							<p class="field-wrap">
-								<input type="text" name="input_search" id="input_search" class="type-text" title="검색어 입력" maxlength="255" style="display:none;" />
+								<input type="text" name="input_search" id="input_search" class="type-text" title="검색어 입력" maxlength="255" style="display:block;" />
 							</p>
 							<input type="button" id="acBtn" class="type-btn" title="검색" value="검색" onclick="return MM_GLOBAL.ndrclick3('MSE03');"  />
-											</fieldset>
-					</form>
+						</fieldset>
 					<span class="acTxtClr" id="acTextClr" style="display:none;"><a class="searchRemove" href="javascript:;" onclick="return MM_GLOBAL.ndrclick('MSE02');">Keyword Clear</a></span>
 				</div>
 			</div>
@@ -106,15 +107,27 @@ function InfoCon(a, b){
 			</div>
 		</header>
 		<nav role="navigation" class="blockNavi">
-			<div class="nav">
-				<ul class="navTab" style="transform:translate3d(-0px, 0px, 0px);">
-
+			<div class="nav" style="width: 898px;" data-ui-rolling-interval="30000">
+				<ul class="navTab" style="left: 0px; width: 898px; transition-duration: 0ms; transform: translate3d(0px, 0px, 0px); display: block;">
 					<li role="presentation">
-						<a href="javascript:;" class="on" aria-selected="true" role="tab" title="뉴스" onclick="return MM_GLOBAL.ndrclick('MME01');">뉴스				<span class="bNav"><span class="num select">1</span><span class="num ">2</span><span class="num ">3</span></span>				</a>
+						<a href="javascript:;" class="on" aria-selected="true" role="tab" title="뉴스" onclick="return MM_GLOBAL.ndrclick('MME01');">뉴스
+							<span class="bNav">
+								<span class="num select">1</span>
+								<span class="num ">2</span>
+								<span class="num ">3</span>
+							</span>
+						</a>
 					</li>
 
 					<li role="presentation">
-						<a href="javascript:;" aria-selected="false" role="tab" title="이슈+" onclick="return MM_GLOBAL.ndrclick('MME07');">이슈+				<span class="bNav"><span class=" "> </span><span class=" "> </span></span>				</a>
+						<a href="javascript:;" aria-selected="false" role="tab" title="이슈+" onclick="return MM_GLOBAL.ndrclick('MME07');">이슈+
+							<span class="bNav">
+								<span class=" ">
+								</span>
+								<span class=" ">
+								</span>
+							</span>
+						</a>
 					</li>
 
 					<li role="presentation">
